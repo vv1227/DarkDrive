@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Navigation</title>
+    <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home-page" class="page">
+        <h1>Login Page</h1>
+        <button id="login">Login</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="page hidden">
+        <h1>Page 2</h1>
+        <button id="goToPage3">Go to Page 3</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3" class="page hidden">
+        <h1>Page 3</h1>
+        <button id="goToLastPage">Go to Last Page</button>
+    </div>
+
+    <!-- Last Page -->
+    <div id="last-page" class="page hidden">
+        <h1>Last Page</h1>
+        <button id="backToHome">Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

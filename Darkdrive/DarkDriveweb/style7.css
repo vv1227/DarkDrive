@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #dff3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 375px;
+    background-color: #e1f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.date-picker-section {
+    background-color: #dff3f3;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-text .material-icons {
+    font-size: 24px;
+    color: #333;
+    margin-right: 8px;
+}
+
+.icon-text p {
+    font-size: 16px;
+    color: #333;
+}
+
+.date-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: #0088cc;
+}
+
+.materialize-modal {
+    width: 100%;
+    background-color: #e8f2f8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.materialize-modal .datepicker-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.materialize-modal .datepicker-controls button {
+    background-color: #e0e6f1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.materialize-modal .datepicker-controls button:hover {
+    background-color: #cdd1d9;
+}
+

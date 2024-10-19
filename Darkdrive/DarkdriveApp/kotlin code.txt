@@ -1,0 +1,38 @@
+package com.example.parkingapp
+
+import android.os.Bundle
+import android.widget.ViewFlipper
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var viewFlipper: ViewFlipper
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        viewFlipper = findViewById(R.id.view_flipper)
+
+        // Handle login button click to move to the parking type screen
+        findViewById<Button>(R.id.login_button).setOnClickListener {
+            viewFlipper.showNext() // Moves to parking type selection screen
+        }
+
+        // Handle bike parking button click to move to date selection screen
+        findViewById<ImageButton>(R.id.bike_parking).setOnClickListener {
+            viewFlipper.showNext() // Moves to date selection screen
+        }
+
+        // Handle car parking button click to move to date selection screen
+        findViewById<ImageButton>(R.id.car_parking).setOnClickListener {
+            viewFlipper.showNext() // Moves to date selection screen
+        }
+
+        // You can add logic for the date selection button if needed
+        findViewById<Button>(R.id.select_date_button).setOnClickListener {
+            // Implement date picker or next navigation step here
+        }
+    }
+}
+s

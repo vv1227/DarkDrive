@@ -1,0 +1,19 @@
+.page {
+    display: none; /* Hide all pages by default */
+}
+
+.page:not(.hidden) {
+    display: block; /* Show the current page */
+}
+
+button {
+    padding: 10px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f5f;
+}

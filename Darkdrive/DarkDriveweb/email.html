@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+    <div class="container">
+        <div class="email-notification">
+            <img src="email-icon.png" alt="Email Icon" class="email-icon">
+            <p class="heading">ENTER YOUR EMAIL WE WILL NOTIFY!!</p>
+        </div>
+
+        <form class="email-form" onsubmit="return notifyUser()">
+            <input type="email" id="email" class="email-input" placeholder="you@example.com" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <button class="alert-btn" onclick="createRideAlert()">Create a ride alert</button>
+
+        <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
